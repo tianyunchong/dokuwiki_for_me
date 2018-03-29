@@ -1,0 +1,5 @@
+整理记录一些不常用的，或者容易忘记的php知识点
+
+***
+* [反射类](https://github.com/tianyunchong/wikforself/wiki/%E5%8F%8D%E5%B0%84%E7%B1%BB)
+* [self和static的区别](http://www.example.com)

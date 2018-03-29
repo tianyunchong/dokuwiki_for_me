@@ -1,0 +1,4 @@
+### 数据采集层
+* [timeTunnel]()
+* Aplus.js   web端，基于浏览器的日志采集技术方案
+* UserTrack  app端的日志采集技术方案

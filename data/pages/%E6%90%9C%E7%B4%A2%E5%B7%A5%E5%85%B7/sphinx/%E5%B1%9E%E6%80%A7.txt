@@ -1,0 +1,4 @@
+属性是存在索引中的，它不进行全文索引，但是可以用于过滤和排序
+* sql_attr_float
+* sql_attr_uint
+* sql_attr_timestamp

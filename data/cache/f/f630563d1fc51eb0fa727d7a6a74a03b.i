@@ -1,0 +1,4 @@
+a:12:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:18:"离线数据计算";i:1;i:3;i:2;i:0;}i:2;i:0;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:3;}i:2;i:0;}i:3;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:19:"markdowku_headeratx";i:1;b:1;i:2;i:5;i:3;s:23:"
+### 离线数据计算";}i:2;i:0;}i:4;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:0;}i:5;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:62:"阿里离线数据仓库的存储和计算都在MaxComputer
+* ";}i:2;i:24;}i:6;a:3:{i:0;s:12:"internallink";i:1;a:2:{i:0;s:0:"";i:1;s:0:"";}i:2;i:86;}i:7;a:3:{i:0;s:6:"plugin";i:1;a:4:{i:0;s:23:"markdowku_anchorsinline";i:1;b:1;i:2;i:5;i:3;s:40:"[MaxComputer]()
+* [统一开发平台]()";}i:2;i:86;}i:8;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:0:"";}i:2;i:126;}i:9;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:126;}i:10;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:126;}i:11;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:126;}}
