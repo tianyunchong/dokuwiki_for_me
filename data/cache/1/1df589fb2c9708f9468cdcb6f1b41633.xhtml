@@ -1,0 +1,42 @@
+
+<h2 class="sectionedit1" id="git">git</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "git" [0-6] -->
+<h3 class="sectionedit2" id="git使用遇到的问题">git使用遇到的问题</h3>
+<div class="level3">
+
+<p>
+* git文件内容没变但status显示不同的解决方案
+</p>
+<pre class="code">``` shell
+ //文件权限修改引起
+ git config core.filemode false
+```</pre>
+
+</div>
+<!-- EDIT2 SECTION "git使用遇到的问题" [7-178] -->
+<h3 class="sectionedit3" id="git全局忽略">git全局忽略</h3>
+<div class="level3">
+
+<p>
+mac下忽略
+</p>
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7:git&amp;codeblock=0" title="下载片段" class="mediafile mf_shell">snippet.shell</a></dt>
+<dd><pre class="code file shell">git config --global core.excludesfile ~/.gitignore_global
+vim ~/.gitignore_global</pre>
+</dd></dl>
+
+</div>
+<!-- EDIT3 SECTION "git全局忽略" [179-308] -->
+<h3 class="sectionedit4" id="php操作git">php操作git</h3>
+<div class="level3">
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7:git&amp;codeblock=1" title="下载片段" class="mediafile mf_php">snippet.php</a></dt>
+<dd><pre class="code file php"><a href="http://www.php.net/exec"><span class="kw3">exec</span></a><span class="br0">&#40;</span><span class="st0">&quot;cd /data/cap/tmp/tmp;/usr/bin/git clone git@********/gc.api.git;mv gc.api gc.api-1;chmod -R 777 gc.api-1&quot;</span><span class="sy0">,</span> <span class="re0">$out</span><span class="br0">&#41;</span><span class="sy0">;</span></pre>
+</dd></dl>
+
+</div>
+<!-- EDIT4 SECTION "php操作git" [309-] -->

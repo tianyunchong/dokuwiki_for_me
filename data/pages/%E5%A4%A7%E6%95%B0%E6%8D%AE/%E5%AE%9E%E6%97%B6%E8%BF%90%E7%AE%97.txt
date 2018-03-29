@@ -1,0 +1,9 @@
+## 实时运算
+
+### 流计算引擎系统
+* Storm
+
+      StreamCompute 阿里在Storm的基础上封装了一层sql语义，方便开发人员通过写sql可以实现实时运算，提高了开发效率，降低了流计算的门槛
+* S4
+* Spark Streaming
+* Flink

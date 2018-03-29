@@ -1,0 +1,1 @@
+<a href="http://www.php.net/exec"><span class="kw3">exec</span></a><span class="br0">&#40;</span><span class="st0">&quot;cd /data/cap/tmp/tmp;/usr/bin/git clone git@********/gc.api.git;mv gc.api gc.api-1;chmod -R 777 gc.api-1&quot;</span><span class="sy0">,</span> <span class="re0">$out</span><span class="br0">&#41;</span><span class="sy0">;</span>

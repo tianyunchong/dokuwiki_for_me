@@ -1,0 +1,7 @@
+# sudo vim /etc/sysctl.conf  新增
+kern.sysv.shmmax=2048000000
+kern.sysv.shmall=4294967296
+# 备用，立即生效设置
+sysctl kern.sysv.shmmax=2048000000
+sysctl kern.sysv.shmall=1073741824
+# 重启mac

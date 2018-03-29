@@ -1,0 +1,20 @@
+## git
+### git使用遇到的问题
+* git文件内容没变但status显示不同的解决方案
+  ``` shell
+   //文件权限修改引起
+   git config core.filemode false
+  ```
+
+### git全局忽略
+mac下忽略
+```shell
+git config --global core.excludesfile ~/.gitignore_global
+vim ~/.gitignore_global
+```
+
+
+### php操作git
+```php
+exec("cd /data/cap/tmp/tmp;/usr/bin/git clone git@********/gc.api.git;mv gc.api gc.api-1;chmod -R 777 gc.api-1", $out);
+```

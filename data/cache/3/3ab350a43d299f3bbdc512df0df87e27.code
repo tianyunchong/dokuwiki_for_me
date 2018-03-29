@@ -1,0 +1,5 @@
+# mac下不支持flock
+(flock -n -e 200 || { echo &quot;instance already exist, please wait and try later!&quot; ; exit 1 ; }
+)200&gt;$lockfile
+# 启动命令
+sudo ./agent-cmd.sh start

@@ -1,0 +1,23 @@
+
+<h2 class="sectionedit1" id="xhprof">xhprof</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "xhprof" [0-9] -->
+<h3 class="sectionedit2" id="xhprof使用">xhprof使用</h3>
+<div class="level3">
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7:xhprof&amp;codeblock=0" title="下载片段" class="mediafile mf_php">snippet.php</a></dt>
+<dd><pre class="code file php">xhprof_enable<span class="br0">&#40;</span>XHPROF_FLAGS_NO_BUILTINS <span class="sy0">|</span> XHPROF_FLAGS_CPU <span class="sy0">|</span> XHPROF_FLAGS_MEMORY<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="re0">$xhprofData</span> <span class="sy0">=</span> xhprof_disable<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">require</span> <span class="st_h">'/data/cap/php/xhprof/xhprof_lib/utils/xhprof_lib.php'</span><span class="sy0">;</span>
+<span class="kw1">require</span> <span class="st_h">'/data/cap/php/xhprof/xhprof_lib/utils/xhprof_runs.php'</span><span class="sy0">;</span>
+<span class="re0">$xhprofRuns</span> <span class="sy0">=</span> <span class="kw2">new</span> \XHProfRuns_Default<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="re0">$runId</span>      <span class="sy0">=</span> <span class="re0">$xhprofRuns</span><span class="sy0">-&gt;</span><span class="me1">save_run</span><span class="br0">&#40;</span><span class="re0">$xhprofData</span><span class="sy0">,</span> <span class="st_h">'xhprof_test'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">echo</span> <span class="st_h">'http://xhprof.net/index.php?run='</span> <span class="sy0">.</span> <span class="re0">$runId</span> <span class="sy0">.</span> <span class="st_h">'&amp;source=xhprof_test'</span><span class="sy0">,</span> PHP_EOL<span class="sy0">;</span>
+<a href="http://www.php.net/exit"><span class="kw3">exit</span></a><span class="sy0">;</span></pre>
+</dd></dl>
+
+</div>
+<!-- EDIT2 SECTION "xhprof使用" [10-] -->

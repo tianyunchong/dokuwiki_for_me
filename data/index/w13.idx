@@ -13,3 +13,6 @@ systemverilog
 inappropriate
 syntaxplugins
 streamcompute
+sublimelinter
+getproperties
+getdoccomment

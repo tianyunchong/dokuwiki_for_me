@@ -1,0 +1,1 @@
+## self和static区分

@@ -1,0 +1,21 @@
+## qconf
+### mac下启动qconf
+修改agent/bin下的agent-cmd.sh注释掉
+```shell
+# mac下不支持flock
+(flock -n -e 200 || { echo "instance already exist, please wait and try later!" ; exit 1 ; }
+)200>$lockfile
+# 启动命令
+sudo ./agent-cmd.sh start
+```
+### 问题修复 [ERROR] Failed to init qconf! ret:201
+[调整mac共享内存](https://github.com/Qihoo360/QConf/wiki/FAQ)
+```shell
+# sudo vim /etc/sysctl.conf  新增
+kern.sysv.shmmax=2048000000
+kern.sysv.shmall=4294967296
+# 备用，立即生效设置
+sysctl kern.sysv.shmmax=2048000000
+sysctl kern.sysv.shmall=1073741824
+# 重启mac
+```

@@ -1,0 +1,24 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1522315487;s:8:"modified";i:1522315562;}s:7:"creator";s:6:"123456";s:4:"user";s:4:"root";s:11:"last_change";a:8:{s:4:"date";i:1522315562;s:2:"ip";s:9:"127.0.0.1";s:4:"type";s:1:"E";s:2:"id";s:42:"php技术整理:技术文章:sublime调研";s:4:"user";s:4:"root";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:6;}s:11:"contributor";a:1:{s:4:"root";s:6:"123456";}s:5:"title";s:13:"sublime使用";s:11:"description";a:2:{s:15:"tableofcontents";a:5:{i:0;a:4:{s:3:"hid";s:13:"sublime使用";s:5:"title";s:13:"sublime使用";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:18:"linter调研使用";s:5:"title";s:18:"linter调研使用";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:12:"文档地址";s:5:"title";s:12:"文档地址";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:3;a:4:{s:3:"hid";s:6:"配置";s:5:"title";s:6:"配置";s:4:"type";s:2:"ul";s:5:"level";i:3;}i:4;a:4:{s:3:"hid";s:18:"错误提示大全";s:5:"title";s:18:"错误提示大全";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:639:"sublime使用
+
+linter调研使用
+
+文档地址
+
+http://www.sublimelinter.com/en/latest/
+
+配置
+
+
+//开启使用
+"show_errors_on_save": true,
+//检查模式 background, load/save, save only, manual(手动)
+"lint_mode": "save only",
+//代码标记样式  fill(填满选中), outline(轮廓选中), solid underline(实线), squiggly underline(波浪线), stippled underline(点状下划线)
+"mark_style": "fill",
+//整行被高亮显示
+"no_column_highlights_line" : "true",
+//弹出视图（大概是一个弹框的样式）
+"tooltips": true,
+//错误行和警告行提示颜色设置
+"error_color": "D02000",
+"warning_color": "DDB700",…";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1522315487;s:8:"modified";i:1522315562;}s:7:"creator";s:6:"123456";s:4:"user";s:4:"root";s:11:"last_change";a:8:{s:4:"date";i:1522315562;s:2:"ip";s:9:"127.0.0.1";s:4:"type";s:1:"E";s:2:"id";s:42:"php技术整理:技术文章:sublime调研";s:4:"user";s:4:"root";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:6;}s:11:"contributor";a:1:{s:4:"root";s:6:"123456";}}}

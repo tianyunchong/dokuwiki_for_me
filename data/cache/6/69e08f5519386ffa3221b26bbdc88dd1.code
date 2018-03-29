@@ -1,0 +1,9 @@
+xhprof_enable<span class="br0">&#40;</span>XHPROF_FLAGS_NO_BUILTINS <span class="sy0">|</span> XHPROF_FLAGS_CPU <span class="sy0">|</span> XHPROF_FLAGS_MEMORY<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+<span class="re0">$xhprofData</span> <span class="sy0">=</span> xhprof_disable<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">require</span> <span class="st_h">'/data/cap/php/xhprof/xhprof_lib/utils/xhprof_lib.php'</span><span class="sy0">;</span>
+<span class="kw1">require</span> <span class="st_h">'/data/cap/php/xhprof/xhprof_lib/utils/xhprof_runs.php'</span><span class="sy0">;</span>
+<span class="re0">$xhprofRuns</span> <span class="sy0">=</span> <span class="kw2">new</span> \XHProfRuns_Default<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="re0">$runId</span>      <span class="sy0">=</span> <span class="re0">$xhprofRuns</span><span class="sy0">-&gt;</span><span class="me1">save_run</span><span class="br0">&#40;</span><span class="re0">$xhprofData</span><span class="sy0">,</span> <span class="st_h">'xhprof_test'</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="kw1">echo</span> <span class="st_h">'http://xhprof.net/index.php?run='</span> <span class="sy0">.</span> <span class="re0">$runId</span> <span class="sy0">.</span> <span class="st_h">'&amp;source=xhprof_test'</span><span class="sy0">,</span> PHP_EOL<span class="sy0">;</span>
+<a href="http://www.php.net/exit"><span class="kw3">exit</span></a><span class="sy0">;</span>

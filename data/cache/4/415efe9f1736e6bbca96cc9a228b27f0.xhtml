@@ -1,0 +1,32 @@
+
+<h1 class="sectionedit1" id="反射类">反射类</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "反射类" [0-12] -->
+<h3 class="sectionedit2" id="反射类获取类对象_属性_注册">反射类获取类对象,属性,注册</h3>
+<div class="level3">
+
+<p>
+<code> php
+class Test {
+    //姓名
+    public $name = null;
+    //年龄
+    public $age = null;
+}
+$test = new Test();
+//建立反射类
+$refle = new ReflectionClass(get_class($test));
+//获取所有属性对象
+$propertys = $refle-&gt;getProperties();
+//获取单个属性
+$property = $refle-&gt;getProperty(&quot;name&quot;);
+//获取属性的注释
+$docBlocl = $refle-&gt;getProperty(&quot;name&quot;)-&gt;getDocComment();
+
+</code>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "反射类获取类对象,属性,注册" [13-] -->

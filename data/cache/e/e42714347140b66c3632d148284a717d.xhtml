@@ -1,0 +1,42 @@
+
+<h2 class="sectionedit1" id="qconf">qconf</h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "qconf" [0-8] -->
+<h3 class="sectionedit2" id="mac下启动qconf">mac下启动qconf</h3>
+<div class="level3">
+
+<p>
+修改agent/bin下的agent-cmd.sh注释掉
+</p>
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7:qconf&amp;codeblock=0" title="下载片段" class="mediafile mf_shell">snippet.shell</a></dt>
+<dd><pre class="code file shell"># mac下不支持flock
+(flock -n -e 200 || { echo &quot;instance already exist, please wait and try later!&quot; ; exit 1 ; }
+)200&gt;$lockfile
+# 启动命令
+sudo ./agent-cmd.sh start</pre>
+</dd></dl>
+
+</div>
+<!-- EDIT2 SECTION "mac下启动qconf" [9-258] -->
+<h3 class="sectionedit3" id="问题修复_error_failed_to_init_qconf_ret201">问题修复 [ERROR] Failed to init qconf! ret:201</h3>
+<div class="level3">
+
+<p>
+<a href="https://github.com/Qihoo360/QConf/wiki/FAQ" class="urlextern" title="https://github.com/Qihoo360/QConf/wiki/FAQ" rel="nofollow">调整mac共享内存</a>
+</p>
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%85%B6%E4%BB%96%E5%B7%A5%E5%85%B7:qconf&amp;codeblock=1" title="下载片段" class="mediafile mf_shell">snippet.shell</a></dt>
+<dd><pre class="code file shell"># sudo vim /etc/sysctl.conf  新增
+kern.sysv.shmmax=2048000000
+kern.sysv.shmall=4294967296
+# 备用，立即生效设置
+sysctl kern.sysv.shmmax=2048000000
+sysctl kern.sysv.shmall=1073741824
+# 重启mac</pre>
+</dd></dl>
+
+</div>
+<!-- EDIT3 SECTION "问题修复 [ERROR] Failed to init qconf! ret:201" [259-] -->

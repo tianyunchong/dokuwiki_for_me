@@ -1,0 +1,13 @@
+//开启使用
+&quot;show_errors_on_save&quot;: true,
+//检查模式 background, load/save, save only, manual(手动)
+&quot;lint_mode&quot;: &quot;save only&quot;,
+//代码标记样式  fill(填满选中), outline(轮廓选中), solid underline(实线), squiggly underline(波浪线), stippled underline(点状下划线)
+&quot;mark_style&quot;: &quot;fill&quot;,
+//整行被高亮显示
+&quot;no_column_highlights_line&quot; : &quot;true&quot;,
+//弹出视图（大概是一个弹框的样式）
+&quot;tooltips&quot;: true,
+//错误行和警告行提示颜色设置
+&quot;error_color&quot;: &quot;D02000&quot;,
+&quot;warning_color&quot;: &quot;DDB700&quot;,
