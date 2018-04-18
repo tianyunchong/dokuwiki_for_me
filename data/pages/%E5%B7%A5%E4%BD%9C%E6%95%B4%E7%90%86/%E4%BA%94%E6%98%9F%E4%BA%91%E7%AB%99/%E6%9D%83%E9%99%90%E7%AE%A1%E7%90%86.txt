@@ -1,0 +1,40 @@
+## 权限管理
+
+整理时间: 2018/4/17
+
+### 涉及的表
+
+* admin_privil  权限信息表(目前记录数: 33)
+
+* admin_userinfo  管理员授权信息表  ,存储uid，siteid和groupid对应关系
+
+* admin_group  站点下的管理员分组表
+
+
+### 左侧导航权限访问控制
+
+* 根据获取到的uid和siteid查询admin_userinfo获取管理员授权信息,判断当前用户相对当前网站，属于创始人还是管理员
+
+* 当前用户相对站点角色不同获取的管理权限不同，根据管理权限，输出左侧菜单模板，控制管理项目是否开放给当前用户
+
+#### 通用权限获取方案
+
+```shell
+admin_privil 查询state > -7的1000条记录
+
+```
+#### 管理员权限获取方案
+
+```shell
+1. admin_userinfo查询uid = $uid and siteid=$siteid and state > -7的一条记录,获取到groupid
+
+2. admin_group查询_id=$groupid的一条记录获取到privil字段
+
+3. admin_privil查询 _id in privil and state = 1获取权限
+```
+
+### 如何初始化admin_group中的PriviL
+
+* 当编辑站点下的管理员时，查询admin_privil(state > -7), 根据blockname组合，渲染到模板用于设置
+
+* 根据用户设置，提交privil更新记录中的privil字段

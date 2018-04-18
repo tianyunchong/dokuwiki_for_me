@@ -1,0 +1,10 @@
+## reflectionClass
+反射类
+### @method getProperties
+* 获取所有的属性
+
+```php
+//使用案例
+$class = new ReflectionClass('Person');//建立Person的反射类
+$instance  = $class->newInstanceArgs($args);//实例化Person类
+```

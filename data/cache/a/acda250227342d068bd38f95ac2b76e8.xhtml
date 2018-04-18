@@ -1,0 +1,28 @@
+
+<h2 class="sectionedit1" id="and和_的区别">and和&amp;&amp;的区别</h2>
+<div class="level2">
+
+<p>
+如果是单独两个表达式参加的运算，两种形式的结果完全相同,但是他们的优先级不同
+四个符号的优先允许从高到低是：&amp;&amp;、||、AND、OR
+</p>
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=php%E6%8A%80%E6%9C%AF%E6%95%B4%E7%90%86:%E7%9F%A5%E8%AF%86%E7%82%B9:and%E5%92%8C&amp;codeblock=0" title="下载片段" class="mediafile mf_php">snippet.php</a></dt>
+<dd><pre class="code file php"><span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> or <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span><span class="co1">//int(6) </span>
+&nbsp;
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> <span class="sy0">||</span> <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span><span class="co1">//bool(true) </span>
+&nbsp;
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> and <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">//int(6)  </span>
+&nbsp;
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> <span class="sy0">&amp;&amp;</span> <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">//bool(false)  </span></pre>
+</dd></dl>
+
+<p>
+赋值运算的优先级比AND和OR的高，所以先赋值；比&amp;&amp;和||的低，所以逻辑运算符先执行，先逻辑运算，再赋值。
+</p>
+
+</div>

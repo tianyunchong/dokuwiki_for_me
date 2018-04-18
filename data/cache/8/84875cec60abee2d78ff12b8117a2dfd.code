@@ -1,0 +1,15 @@
+<span class="kw2">class</span> Test <span class="br0">&#123;</span>
+    <span class="co1">//姓名</span>
+    <span class="kw2">public</span> <span class="re0">$name</span> <span class="sy0">=</span> <span class="kw4">null</span><span class="sy0">;</span>
+    <span class="co1">//年龄</span>
+    <span class="kw2">public</span> <span class="re0">$age</span> <span class="sy0">=</span> <span class="kw4">null</span><span class="sy0">;</span>
+<span class="br0">&#125;</span>
+<span class="re0">$test</span> <span class="sy0">=</span> <span class="kw2">new</span> Test<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co1">//建立反射类</span>
+<span class="re0">$refle</span> <span class="sy0">=</span> <span class="kw2">new</span> ReflectionClass<span class="br0">&#40;</span><a href="http://www.php.net/get_class"><span class="kw3">get_class</span></a><span class="br0">&#40;</span><span class="re0">$test</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co1">//获取所有属性对象</span>
+<span class="re0">$propertys</span> <span class="sy0">=</span> <span class="re0">$refle</span><span class="sy0">-&gt;</span><span class="me1">getProperties</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co1">//获取单个属性</span>
+<span class="re0">$property</span> <span class="sy0">=</span> <span class="re0">$refle</span><span class="sy0">-&gt;</span><span class="me1">getProperty</span><span class="br0">&#40;</span><span class="st0">&quot;name&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+<span class="co1">//获取属性的注释</span>
+<span class="re0">$docBlocl</span> <span class="sy0">=</span> <span class="re0">$refle</span><span class="sy0">-&gt;</span><span class="me1">getProperty</span><span class="br0">&#40;</span><span class="st0">&quot;name&quot;</span><span class="br0">&#41;</span><span class="sy0">-&gt;</span><span class="me1">getDocComment</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>

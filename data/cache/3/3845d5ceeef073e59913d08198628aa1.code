@@ -1,0 +1,3 @@
+<span class="co1">//使用案例</span>
+<span class="re0">$class</span> <span class="sy0">=</span> <span class="kw2">new</span> ReflectionClass<span class="br0">&#40;</span><span class="st_h">'Person'</span><span class="br0">&#41;</span><span class="sy0">;</span><span class="co1">//建立Person的反射类</span>
+<span class="re0">$instance</span>  <span class="sy0">=</span> <span class="re0">$class</span><span class="sy0">-&gt;</span><span class="me1">newInstanceArgs</span><span class="br0">&#40;</span><span class="re0">$args</span><span class="br0">&#41;</span><span class="sy0">;</span><span class="co1">//实例化Person类</span>

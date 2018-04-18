@@ -1,0 +1,11 @@
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> or <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span><span class="co1">//int(6) </span>
+&nbsp;
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> <span class="sy0">||</span> <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span><span class="co1">//bool(true) </span>
+&nbsp;
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> and <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">//int(6)  </span>
+&nbsp;
+<span class="re0">$p</span> <span class="sy0">=</span> <span class="nu0">6</span> <span class="sy0">&amp;&amp;</span> <span class="nu0">0</span><span class="sy0">;</span> 
+<a href="http://www.php.net/var_dump"><span class="kw3">var_dump</span></a><span class="br0">&#40;</span><span class="re0">$p</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">//bool(false)  </span>

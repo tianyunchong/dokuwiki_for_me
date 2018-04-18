@@ -1,0 +1,5 @@
+1. admin_userinfo查询uid = $uid and siteid=$siteid and state &gt; -7的一条记录,获取到groupid
+&nbsp;
+2. admin_group查询_id=$groupid的一条记录获取到privil字段
+&nbsp;
+3. admin_privil查询 _id in privil and state = 1获取权限

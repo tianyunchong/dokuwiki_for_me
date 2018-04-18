@@ -1,0 +1,6 @@
+## collection
+### Phalcon\Mvc\Collection
+#### @method setSource
+* 设置当前关联的表名
+#### @method getConnection
+* 获取当前链接的db对象

@@ -1,0 +1,72 @@
+
+<h2 class="sectionedit1" id="权限管理">权限管理</h2>
+<div class="level2">
+
+<p>
+整理时间: 2018/4/17
+</p>
+
+</div>
+<!-- EDIT1 SECTION "权限管理" [0-41] -->
+<h3 class="sectionedit2" id="涉及的表">涉及的表</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li">admin_privil  权限信息表(目前记录数: 33)
+</div>
+</li>
+<li class="level1"><div class="li">admin_userinfo  管理员授权信息表  ,存储uid，siteid和groupid对应关系
+</div>
+</li>
+<li class="level1"><div class="li">admin_group  站点下的管理员分组表</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "涉及的表" [42-248] -->
+<h3 class="sectionedit3" id="左侧导航权限访问控制">左侧导航权限访问控制</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li">根据获取到的uid和siteid查询admin_userinfo获取管理员授权信息,判断当前用户相对当前网站，属于创始人还是管理员
+</div>
+</li>
+<li class="level1"><div class="li">当前用户相对站点角色不同获取的管理权限不同，根据管理权限，输出左侧菜单模板，控制管理项目是否开放给当前用户</div>
+</li>
+</ul>
+
+</div>
+
+<h4 id="通用权限获取方案">通用权限获取方案</h4>
+<div class="level4">
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%B7%A5%E4%BD%9C%E6%95%B4%E7%90%86:%E4%BA%94%E6%98%9F%E4%BA%91%E7%AB%99:%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86&amp;codeblock=0" title="下载片段" class="mediafile mf_shell">snippet.shell</a></dt>
+<dd><pre class="code file shell">admin_privil 查询state &gt; -7的1000条记录</pre>
+</dd></dl>
+
+</div>
+
+<h4 id="管理员权限获取方案">管理员权限获取方案</h4>
+<div class="level4">
+<dl class="file">
+<dt><a href="/doku.php?do=export_code&amp;id=%E5%B7%A5%E4%BD%9C%E6%95%B4%E7%90%86:%E4%BA%94%E6%98%9F%E4%BA%91%E7%AB%99:%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86&amp;codeblock=1" title="下载片段" class="mediafile mf_shell">snippet.shell</a></dt>
+<dd><pre class="code file shell">1. admin_userinfo查询uid = $uid and siteid=$siteid and state &gt; -7的一条记录,获取到groupid
+&nbsp;
+2. admin_group查询_id=$groupid的一条记录获取到privil字段
+&nbsp;
+3. admin_privil查询 _id in privil and state = 1获取权限</pre>
+</dd></dl>
+
+</div>
+<!-- EDIT3 SECTION "左侧导航权限访问控制" [249-970] -->
+<h3 class="sectionedit4" id="如何初始化admin_group中的privil">如何初始化admin_group中的PriviL</h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li">当编辑站点下的管理员时，查询admin_privil(state &gt; -7), 根据blockname组合，渲染到模板用于设置
+</div>
+</li>
+<li class="level1"><div class="li">根据用户设置，提交privil更新记录中的privil字段
+</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "如何初始化admin_group中的PriviL" [971-] -->

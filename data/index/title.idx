@@ -12,8 +12,8 @@ Formatting Syntax
 
 技术文章
 
-
-字符串字段
+属性
+字符串
 
 概念整理
 数据采集层
@@ -33,3 +33,10 @@ git
 qconf
 xhprof
 常用地址
+机器对应
+collection
+reflectionClass
+
+and和&&的区别
+常用命令
+权限管理

@@ -1,0 +1,4 @@
+## 常用命令
+```shell
+/usr/local/mongodb/bin/mongod --port 27017 --fork --dbpath=/data/mongodata/ --logpath=/data/mongodata/mongodb.log --logappend  --replSet rs0
+```
