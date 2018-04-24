@@ -1,0 +1,8 @@
+# 拉取镜像
+docker pull registry.cn-hangzhou.aliyuncs.com/fecshopsoft/php-7.1.13-fpm
+# 运行镜像
+docker run -itd -p 9000:9000 --name php-fpm -v /data/cap:/data/cap 40ef522e26d6 /bin/bash
+# 进入镜像(这里进入后，还得启动下php-fpm, 还可以安装扩展)
+docker exec -it 304aa28c347d /bin/bash
+# 修改镜像，commit提交
+docker commit 509036ba40bb mydocker_phpfpm71:version2

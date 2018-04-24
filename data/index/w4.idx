@@ -162,3 +162,7 @@ port
 fork
 2018
 1000
+brew
+stop
+pull
+9000

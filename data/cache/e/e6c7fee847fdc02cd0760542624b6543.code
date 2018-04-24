@@ -1,0 +1,4 @@
+brew services stop php56
+brew services start php71
+brew unlink php56
+brew link   php71

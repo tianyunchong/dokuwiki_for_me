@@ -150,3 +150,7 @@ utils
 runid
 27017
 state
+php56
+php71
+alias
+myapp
